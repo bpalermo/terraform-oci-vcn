@@ -1,17 +1,7 @@
 # Copyright (c) 2019, 2020 Oracle Corporation and/or affiliates.  All rights reserved.
 # Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl
 
-# provider identity parameters
-
-variable "region" {
-  # List of regions: https://docs.cloud.oracle.com/iaas/Content/General/Concepts/regions.htm#ServiceAvailabilityAcrossRegions
-  description = "the OCI region where resources will be created"
-  type        = string
-  default     = null
-}
-
 # general oci parameters
-
 variable "compartment_id" {
   description = "compartment id where to create all resources"
   type        = string
@@ -35,7 +25,6 @@ variable "tags" {
 }
 
 # vcn parameters
-
 variable "create_drg" {
   description = "whether to create Dynamic Routing Gateway. If set to true, creates a Dynamic Routing Gateway and attach it to the vcn."
   type        = bool

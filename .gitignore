@@ -12,7 +12,9 @@
 provider.tf
 
 # visual code
- **/.vscode/*
+**/.vscode/*
 
 # macOS related files
- .DS_Store
+.DS_Store
+
+.idea
